@@ -6,13 +6,11 @@ const segments = [
   { segmentText: 'Car Hyundai', segColor: 'blue' },
   { segmentText: 'Machine', segColor: 'green' },
   { segmentText: 'Auto Mode', segColor: 'grey' },
-  // Add more segments as needed
 ];
 
 const MySpinWheel: React.FC = () => {
   const handleSpinFinish = (result: string) => {
     console.log(`Spin Result is : ${result}`);
-    // Handle the result as needed
   };
 
   const spinWheelProps: ISpinWheelProps = {
@@ -31,7 +29,7 @@ const MySpinWheel: React.FC = () => {
     isSpinSound: true,
   };
 
-  return <SpinWheel {...spinWheelProps} />; // SpinWheel as a component (value)
+  return <SpinWheel {...spinWheelProps} />;
 };
 
 export default MySpinWheel;
